@@ -1,0 +1,1420 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Retirement &amp; Care Guide — South Paris, Maine</title>
+<style>
+  :root{
+    --bg:#faf8f4;
+    --surface:#ffffff;
+    --ink:#191817;
+    --ink-soft:#403d39;
+    --ink-quiet:#5c5852;
+    --pine:#1d5641;
+    --pine-deep:#123729;
+    --pine-tint:#e7efeb;
+    --sand:#fdf4e3;
+    --sand-edge:#a06a15;
+    --rust:#8a2b26;
+    --rust-tint:#fbecea;
+    --line:#d8d2c6;
+    --line-soft:#e8e3d9;
+    --focus:#1d5641;
+  }
+
+  *{box-sizing:border-box}
+
+  html{font-size:20px;-webkit-text-size-adjust:100%}
+
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size:1.15rem;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .wrap{max-width:1180px;margin:0 auto;padding-inline:20px;padding-block:0}
+  /* keep prose to a readable measure even though the container is wide */
+  .wrap > p,.wrap > .why{max-width:42rem}
+
+  /* ---------- typography ---------- */
+  h1,h2,h3,h4{
+    font-family:Georgia,"Iowan Old Style","Times New Roman",serif;
+    line-height:1.2;
+    color:var(--pine-deep);
+    margin:0;
+    font-weight:700;
+  }
+  h1{font-size:2.3rem;letter-spacing:-.01em}
+  h2{font-size:1.75rem}
+  h3{font-size:1.3rem;color:var(--ink)}
+  h4{font-size:1.1rem;color:var(--ink);font-family:inherit;font-weight:700}
+  p{margin:0 0 .9em}
+  a{color:var(--pine);text-decoration-thickness:2px;text-underline-offset:3px}
+  a:hover{color:var(--pine-deep)}
+  strong{font-weight:700}
+  em{font-style:italic}
+  :focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}
+
+  ul,ol{margin:0 0 1em;padding-left:1.4em}
+  li{margin-bottom:.55em}
+  li:last-child{margin-bottom:0}
+
+  .lede{font-size:1.25rem;color:var(--ink-soft)}
+  .quiet{color:var(--ink-quiet);font-size:1rem}
+  .nowrap{white-space:nowrap}
+
+  /* ---------- masthead ---------- */
+  header.masthead{
+    background:var(--pine-deep);
+    color:#f4f1ea;
+    padding-block:2.2rem 2rem;
+    border-bottom:6px solid #0d2a1f;
+  }
+  header.masthead h1{color:#fff;font-size:2.4rem;margin-bottom:.35rem}
+  header.masthead .sub{font-size:1.2rem;color:#c9dbd2;margin:0}
+  header.masthead .stamp{
+    margin-top:1.1rem;font-size:.95rem;color:#a9c4b8;
+    border-top:1px solid #2c6a52;padding-top:.8rem;
+  }
+
+  /* ---------- start here ---------- */
+  .starthere{
+    background:var(--pine-tint);
+    border-bottom:3px solid #b9cec4;
+    padding-block:1.8rem;
+  }
+  .starthere h2{font-size:1.5rem;margin-bottom:.2rem}
+  .starthere .why{color:var(--ink-soft);margin-bottom:1.2rem;font-size:1.05rem}
+
+  .callrow{
+    display:block;
+    background:var(--surface);
+    border:2px solid var(--pine);
+    border-radius:10px;
+    padding:.85rem 1rem;
+    margin-bottom:.8rem;
+    text-decoration:none;
+    color:var(--ink);
+    min-height:44px;
+  }
+  .callrow:last-child{margin-bottom:0}
+  .callrow:hover{background:#f4f9f6}
+  .callrow .who{display:block;font-weight:700;font-size:1.05rem;color:var(--ink)}
+  .callrow .num{
+    display:block;
+    font-size:1.85rem;
+    font-weight:700;
+    color:var(--pine);
+    letter-spacing:.01em;
+    line-height:1.25;
+    text-decoration:underline;
+    text-decoration-thickness:2px;
+    text-underline-offset:3px;
+  }
+  .callrow .what{display:block;font-size:.98rem;color:var(--ink-quiet);margin-top:.15rem}
+
+  /* ---------- sections ---------- */
+  section.card{
+    background:var(--surface);
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:1.5rem 1.3rem;
+    margin-block:1.6rem;
+  }
+  section.card > h2{
+    padding-bottom:.6rem;
+    border-bottom:3px solid var(--pine-tint);
+    margin-bottom:1rem;
+  }
+  .secnum{
+    display:inline-block;
+    background:var(--pine);
+    color:#fff;
+    font-family:inherit;
+    font-size:1rem;
+    font-weight:700;
+    width:1.9rem;height:1.9rem;
+    line-height:1.9rem;
+    text-align:center;
+    border-radius:50%;
+    margin-right:.55rem;
+    vertical-align:.12em;
+  }
+  .subhead{margin-top:1.6rem;margin-bottom:.5rem}
+  .card > .subhead:first-of-type{margin-top:.6rem}
+
+  /* ---------- callouts ---------- */
+  .box{border-radius:10px;padding:1.05rem 1.15rem;margin-block:1.1rem;border-left-width:7px;border-left-style:solid}
+  .box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+  .box .boxtitle{display:block;font-weight:700;margin-bottom:.35rem;font-size:1.1rem}
+  .box.key{background:var(--pine-tint);border-left-color:var(--pine);border:1px solid #bcd2c7;border-left-width:7px}
+  .box.key .boxtitle{color:var(--pine-deep)}
+  .box.warn{background:var(--sand);border-left-color:var(--sand-edge);border:1px solid #e6d2a8;border-left-width:7px}
+  .box.warn .boxtitle{color:#7a4f0d}
+  .box.stop{background:var(--rust-tint);border-left-color:var(--rust);border:1px solid #edc9c5;border-left-width:7px}
+  .box.stop .boxtitle{color:var(--rust)}
+
+  /* ---------- inline phone ---------- */
+  a.tel{
+    display:inline-block;
+    font-weight:700;
+    white-space:nowrap;
+    padding:.15rem .1rem;
+    min-height:34px;
+  }
+
+  /* a bigger tappable phone block used inside sections */
+  .telblock{
+    display:block;
+    border:2px solid var(--line);
+    border-radius:9px;
+    padding:.7rem .9rem;
+    margin-block:.7rem;
+    text-decoration:none;
+    color:var(--ink);
+    min-height:44px;
+    background:#fcfbf8;
+  }
+  .telblock:hover{border-color:var(--pine);background:#f4f9f6}
+  .telblock .who{display:block;font-weight:700}
+  .telblock .num{display:block;font-size:1.4rem;font-weight:700;color:var(--pine);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px}
+  .telblock .what{display:block;font-size:.98rem;color:var(--ink-quiet)}
+
+  /* ---------- details ---------- */
+  details{border:1px solid var(--line);border-radius:9px;margin-block:.8rem;background:#fcfbf8;overflow:hidden}
+  details summary{
+    cursor:pointer;
+    padding:.85rem 1rem;
+    font-weight:700;
+    min-height:44px;
+    display:flex;
+    align-items:center;
+    gap:.6rem;
+    list-style:none;
+    background:#f6f3ec;
+  }
+  details summary::-webkit-details-marker{display:none}
+  details summary::before{
+    content:"+";
+    flex:0 0 auto;
+    font-size:1.4rem;
+    line-height:1;
+    color:var(--pine);
+    font-weight:700;
+    width:1.1rem;
+    text-align:center;
+  }
+  details[open] summary::before{content:"\2212"}
+  details summary:hover{background:var(--pine-tint)}
+  .detbody{padding:.3rem 1rem 1rem}
+  .detbody > :last-child{margin-bottom:0}
+
+  /* ---------- checklist ---------- */
+  ul.checks{list-style:none;padding-left:0}
+  ul.checks li{
+    padding-left:2rem;position:relative;margin-bottom:.7rem;
+  }
+  ul.checks li::before{
+    content:"";
+    position:absolute;left:0;top:.3em;
+    width:1.15rem;height:1.15rem;
+    border:2.5px solid var(--pine);
+    border-radius:4px;
+  }
+
+  /* ---------- tables ---------- */
+  .tablewrap{overflow-x:auto;margin-block:1.1rem;border:1px solid var(--line);border-radius:9px}
+  table{border-collapse:collapse;width:100%;font-size:1.02rem;background:var(--surface)}
+  th,td{text-align:left;padding:.7rem .8rem;border-bottom:1px solid var(--line-soft);vertical-align:top}
+  th{background:#f6f3ec;font-weight:700;color:var(--pine-deep)}
+  tr:last-child td{border-bottom:none}
+  td.money{white-space:nowrap;font-weight:700}
+
+  /* ---------- calculators ---------- */
+  .calc{border:2px solid var(--line);border-radius:11px;padding:1.15rem;margin-block:1.3rem;background:#fcfbf8}
+  .calc > h3{margin-bottom:.25rem}
+  .calc .hint{color:var(--ink-quiet);font-size:1rem;margin-bottom:1rem}
+  .field{margin-bottom:1rem}
+  .field label{display:block;font-weight:700;margin-bottom:.3rem;font-size:1.05rem}
+  .field .sublabel{display:block;font-weight:400;color:var(--ink-quiet);font-size:.97rem;margin-bottom:.35rem}
+  .field input,.field select{
+    width:100%;
+    font-size:1.2rem;
+    font-family:inherit;
+    padding:.65rem .7rem;
+    border:2px solid #b8b2a6;
+    border-radius:8px;
+    background:#fff;
+    color:var(--ink);
+    min-height:48px;
+  }
+  .field input:focus,.field select:focus{border-color:var(--pine)}
+  .result{
+    margin-top:1rem;
+    padding:1rem 1.1rem;
+    border-radius:9px;
+    background:var(--pine-tint);
+    border:1px solid #bcd2c7;
+    border-left:7px solid var(--pine);
+    font-size:1.1rem;
+  }
+  .result:empty{display:none}
+  .result p{margin:0 0 .5em}
+  .result p:last-child{margin-bottom:0}
+  .result .big{font-size:1.45rem;font-weight:700;color:var(--pine-deep);display:block;line-height:1.3}
+  .result.isbad{background:var(--rust-tint);border-color:#edc9c5;border-left-color:var(--rust)}
+  .result.isbad .big{color:var(--rust)}
+  .result.isok{background:var(--pine-tint);border-left-color:var(--pine)}
+
+  /* ---------- buttons ---------- */
+  .btnrow{display:flex;flex-wrap:wrap;gap:.7rem;margin-block:1.2rem}
+  button{
+    font-family:inherit;
+    font-size:1.05rem;
+    font-weight:700;
+    padding:.7rem 1.1rem;
+    min-height:48px;
+    border-radius:9px;
+    border:2px solid var(--pine);
+    background:var(--surface);
+    color:var(--pine);
+    cursor:pointer;
+  }
+  button:hover{background:var(--pine-tint)}
+  button.primary{background:var(--pine);color:#fff}
+  button.primary:hover{background:var(--pine-deep)}
+  button.danger{border-color:var(--rust);color:var(--rust)}
+  button.danger:hover{background:var(--rust-tint)}
+
+  /* ---------- footer ---------- */
+  footer.foot{
+    background:#efece4;
+    border-top:3px solid var(--line);
+    margin-top:2.5rem;
+    padding-block:2rem 2.5rem;
+    color:var(--ink-soft);
+  }
+  footer.foot h2{font-size:1.4rem;margin-bottom:.7rem}
+  footer.foot .quiet{font-size:1rem}
+
+  hr.rule{border:none;border-top:1px solid var(--line);margin-block:1.6rem}
+
+  /* ---------- page shell: sticky sidebar + content ---------- */
+  .shell{max-width:1180px;margin:0 auto;padding-inline:20px}
+  .content{min-width:0}
+
+  @media (min-width:1100px){
+    .shell{
+      display:grid;
+      grid-template-columns:260px minmax(0,1fr);
+      gap:2.5rem;
+      align-items:start;
+    }
+    .toc{
+      position:sticky;
+      top:1.5rem;
+      max-height:calc(100vh - 3rem);
+      overflow-y:auto;
+      overscroll-behavior:contain;
+    }
+  }
+
+  /* anchored sections should not sit flush against the top edge */
+  section.card,.starthere{scroll-margin-top:1.5rem}
+
+  /* ---------- table of contents ---------- */
+  .tocbox{
+    border:1px solid var(--line);
+    border-radius:12px;
+    background:var(--surface);
+    margin-block:1.6rem;
+    overflow:hidden;
+  }
+  .tocbox > summary{
+    background:var(--pine-tint);
+    font-size:1.05rem;
+    color:var(--pine-deep);
+  }
+  .tocbox > summary::before{color:var(--pine-deep)}
+  .tocbox > summary:hover{background:#dce8e2}
+
+  .toclist{list-style:none;margin:0;padding:.5rem}
+  .toclist li{margin:0}
+  .toclist a{
+    display:flex;
+    align-items:center;
+    gap:.1rem;
+    min-height:44px;
+    padding:.5rem .6rem;
+    border-radius:8px;
+    border-left:5px solid transparent;
+    text-decoration:none;
+    color:var(--ink);
+    font-weight:600;
+    font-size:1rem;
+    line-height:1.3;
+  }
+  .toclist a:hover{background:var(--pine-tint);color:var(--pine-deep)}
+  .toclist a.active{
+    background:var(--pine-tint);
+    border-left-color:var(--pine);
+    color:var(--pine-deep);
+    font-weight:700;
+  }
+  .tocnum{
+    flex:0 0 1.5em;
+    color:var(--pine);
+    font-weight:700;
+  }
+  .toclist a.active .tocnum{color:var(--pine-deep)}
+
+  /* on desktop the list is always shown, so the toggle is unnecessary */
+  @media (min-width:1100px){
+    .tocbox{margin-top:1.6rem}
+    .tocbox > summary{display:none}
+  }
+
+  /* ---------- narrow screens ---------- */
+  @media (max-width:520px){
+    html{font-size:19px}
+    header.masthead h1{font-size:1.95rem}
+    h2{font-size:1.5rem}
+    .callrow .num{font-size:1.6rem}
+    section.card{padding:1.2rem 1rem;border-radius:10px}
+    .wrap,.shell{padding-inline:16px}
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important}
+  }
+
+  /* ---------- print ---------- */
+  @media print{
+    html{font-size:12pt}
+    body{background:#fff;color:#000}
+    .noprint{display:none!important}
+    .shell{display:block;max-width:none;padding:0}
+    .toc{display:none!important}
+    header.masthead{background:#fff;color:#000;border-bottom:2pt solid #000;padding-block:0 .5rem}
+    header.masthead h1,header.masthead .sub,header.masthead .stamp{color:#000}
+    .starthere{background:#fff;border-bottom:1pt solid #000}
+    section.card{border:1pt solid #666;break-inside:avoid;margin-block:.8rem;padding:.8rem}
+    details{border:1pt solid #666}
+    details summary{background:#fff}
+    details summary::before{content:""}
+    .callrow,.telblock{border:1pt solid #000;background:#fff}
+    .callrow .num,.telblock .num{color:#000}
+    a{color:#000;text-decoration:none}
+    .box{border:1pt solid #666;border-left:3pt solid #000}
+    footer.foot{background:#fff;border-top:1pt solid #000}
+    .result{border:1pt solid #666;background:#fff}
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <h1>Retirement &amp; Care Guide</h1>
+    <p class="sub">Help, benefits, and legal papers for older adults in South&nbsp;Paris, Maine</p>
+    <p class="stamp">A plain-language guide to Maine programs for older adults &middot; All dollar figures are 2026 amounts &middot; Last updated September&nbsp;2026</p>
+  </div>
+</header>
+
+<div class="starthere" id="start">
+  <div class="wrap">
+    <h2>Start here</h2>
+    <p class="why">If you only do one thing today, call the first number. It is free, and one call covers almost everything on this page.</p>
+
+    <a class="callrow" href="tel:+18773533771">
+      <span class="who">Aging &amp; Disability Resource Center</span>
+      <span class="num">1-877-353-3771</span>
+      <span class="what">One free call. They find out what you qualify for and sign you up. Start here.</span>
+    </a>
+
+    <a class="callrow" href="tel:+12077954010">
+      <span class="who">SeniorsPlus &mdash; your local agency on aging</span>
+      <span class="num">207-795-4010</span>
+      <span class="what">Serves Oxford County. Meals, rides, Medicare help, caregiver support, care planning.</span>
+    </a>
+
+    <a class="callrow" href="tel:+18007505353">
+      <span class="who">Legal Services for Maine Elders</span>
+      <span class="num">1-800-750-5353</span>
+      <span class="what">A real lawyer, free, if you are 60 or older. Wills, the house, benefit denials.</span>
+    </a>
+  </div>
+</div>
+
+<div class="shell">
+
+  <aside class="toc noprint">
+    <details class="tocbox" id="tocbox" open>
+      <summary>On this page</summary>
+      <nav aria-label="Sections of this guide">
+        <ol class="toclist">
+        <li><a href="#start"><span class="tocnum"></span>Start here</a></li>
+        <li><a href="#legal"><span class="tocnum">1</span>Your legal papers</a></li>
+        <li><a href="#home"><span class="tocnum">2</span>Getting help at home</a></li>
+        <li><a href="#money"><span class="tocnum">3</span>Money, MaineCare &amp; the house</a></li>
+        <li><a href="#housing"><span class="tocnum">4</span>Where to live</a></li>
+        <li><a href="#veteran"><span class="tocnum">5</span>Veteran benefits</a></li>
+        <li><a href="#tax"><span class="tocnum">6</span>Property tax &amp; bills</a></li>
+        <li><a href="#numbers"><span class="tocnum">7</span>Your numbers</a></li>
+        <li><a href="#contacts"><span class="tocnum">8</span>Every phone number</a></li>
+        </ol>
+      </nav>
+    </details>
+  </aside>
+
+  <main class="content">
+
+  <div class="btnrow noprint">
+    <button type="button" class="primary" id="btnPrint">Print this page</button>
+    <button type="button" id="btnOpenAll">Open all sections</button>
+  </div>
+
+  <!-- ============ 1. LEGAL PAPERS ============ -->
+  <section class="card" id="legal">
+    <h2><span class="secnum">1</span>Your legal papers</h2>
+
+    <p class="lede">There are four documents. Three of them matter more than the will, because they work while you are still alive.</p>
+
+    <h3 class="subhead">The four documents</h3>
+
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th>Document</th><th>What it does</th><th>How to sign it in Maine</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Will</strong></td>
+            <td>Says who gets your things after you die.</td>
+            <td>Signed by you, plus <strong>2 witnesses</strong>.</td>
+          </tr>
+          <tr>
+            <td><strong>Financial power of attorney</strong></td>
+            <td>Lets someone you trust pay bills and handle money if you cannot. <strong>Most important document on this list.</strong></td>
+            <td><strong>Notary required.</strong> Witnesses are <em>not</em> required in Maine.</td>
+          </tr>
+          <tr>
+            <td><strong>Advance directive</strong><br><span class="quiet">(health care power of attorney / living will)</span></td>
+            <td>Names who speaks to doctors for you, and says what treatment you do and do not want.</td>
+            <td><strong>2 witnesses.</strong> No notary needed.</td>
+          </tr>
+          <tr>
+            <td><strong>Transfer-on-death deed</strong></td>
+            <td>Passes the house straight to your children when you die, skipping probate court.</td>
+            <td>Signed, notarized, and <strong>recorded at the Oxford County Registry of Deeds</strong>.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="box warn">
+      <span class="boxtitle">Read this before you use a transfer-on-death deed</span>
+      <p>A transfer-on-death deed avoids probate court. It does <strong>not</strong>, by itself, protect the house from MaineCare estate recovery. If MaineCare paid for your care, the State can still make a claim. Ask a lawyer which tool actually fits your goal &mdash; see <a href="#money">Section 3</a>.</p>
+    </div>
+
+    <div class="box key">
+      <span class="boxtitle">Good news: Maine estate tax is almost certainly not your problem</span>
+      <p>Maine only taxes estates worth more than <strong>$7,160,000</strong>. A home and normal retirement savings are nowhere near that. You can stop worrying about this one.</p>
+    </div>
+
+    <h3 class="subhead">Do this, in this order</h3>
+    <ul class="checks">
+      <li><strong>Call Legal Services for Maine Elders</strong> at <a class="tel" href="tel:+18007505353">1-800-750-5353</a>. Free if you are 60+. Ask for help with a will and powers of attorney.</li>
+      <li><strong>Pick your people.</strong> Who handles money? Who talks to doctors? They can be the same person or different people.</li>
+      <li><strong>Do the financial power of attorney first.</strong> If a stroke or a fall happens without it, the family has to go to court to get guardianship. That is slow and expensive.</li>
+      <li><strong>Do the advance directive next.</strong> Give a copy to your doctor and to Stephens Memorial Hospital in Norway.</li>
+      <li><strong>Then the will.</strong></li>
+      <li><strong>Tell your family where the originals are kept.</strong> A document nobody can find does nothing.</li>
+    </ul>
+
+    <details>
+      <summary>Where to get these done, and roughly what it costs</summary>
+      <div class="detbody">
+        <p><strong>Free:</strong> Legal Services for Maine Elders, <a class="tel" href="tel:+18007505353">1-800-750-5353</a>, for Mainers 60 and older. Also Pine Tree Legal Assistance, <a class="tel" href="tel:+12077748211">207-774-8211</a>.</p>
+        <p><strong>Paid:</strong> A private elder law attorney. Worth the money if you own the house and are thinking about MaineCare, because the house is the part that goes wrong most often. Expect a flat fee for a basic set of documents.</p>
+        <p><strong>Notary:</strong> Most banks and the Paris town office notarize. Call ahead.</p>
+        <p><strong>Recording a deed:</strong> Oxford County Registry of Deeds, in South Paris.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ 2. HELP AT HOME ============ -->
+  <section class="card" id="home">
+    <h2><span class="secnum">2</span>Getting help at home</h2>
+
+    <p class="lede">Staying in your own home is almost always cheaper than moving, and Maine will pay for help that lets you stay. Most people never find out these programs exist.</p>
+
+    <h3 class="subhead">Programs that send help to your house</h3>
+
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th>Program</th><th>What it pays for</th><th>Who qualifies</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>MaineCare Section 19</strong><br><span class="quiet">Home &amp; Community Benefits</span></td>
+            <td>Personal care, homemaking, and nursing at home &mdash; the same level of care a nursing home gives.</td>
+            <td>You need nursing-home level help, but want to stay home. Income and asset limits apply.</td>
+          </tr>
+          <tr>
+            <td><strong>Section 63</strong><br><span class="quiet">In-Home &amp; Community Support</span></td>
+            <td>Help with bathing, dressing, meals, housekeeping.</td>
+            <td>Lower level of need than Section 19. Some versions have a sliding fee instead of strict limits.</td>
+          </tr>
+          <tr>
+            <td><strong>Meals on Wheels</strong></td>
+            <td>Hot or frozen meals delivered. Also a daily check on you.</td>
+            <td>Through SeniorsPlus. No strict income test; donations requested.</td>
+          </tr>
+          <tr>
+            <td><strong>HEAP</strong><br><span class="quiet">heating assistance</span></td>
+            <td>Help paying for oil, propane, or wood.</td>
+            <td>Income-based. Applying also gets you screened for free weatherization.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="subhead">Who to call</h3>
+
+    <a class="telblock" href="tel:+12077954010">
+      <span class="who">SeniorsPlus</span>
+      <span class="num">207-795-4010</span>
+      <span class="what">Meals on Wheels, care coordination, Medicare counseling, Money Minders bill-paying help, Friendly Caller. Toll free: 1-800-427-1241.</span>
+    </a>
+
+    <a class="telblock" href="tel:+12077437716">
+      <span class="who">Community Concepts &mdash; heating help (HEAP)</span>
+      <span class="num">207-743-7716</span>
+      <span class="what">South Paris office. Applying for heating help also screens you for free weatherization and other aid.</span>
+    </a>
+
+    <div class="box key">
+      <span class="boxtitle">Two benefits with NO asset test at all</span>
+      <p>These two only look at your monthly income &mdash; <strong>your savings and your house do not count</strong>. That makes them the easiest wins on this whole page.</p>
+      <ul>
+        <li><strong>Medicare Savings Program (QMB).</strong> Pays your Medicare Part&nbsp;B premium and your deductibles and copays. Income line: <strong>$2,461/month</strong> for one person, <strong>$3,337/month</strong> for a couple.</li>
+        <li><strong>Low Cost Drugs for the Elderly (DEL).</strong> Pays up to 80% of what you still owe for prescriptions after Part&nbsp;D. Age 62+. Same income line.</li>
+      </ul>
+      <p>If you are already on MaineCare or the Medicare Buy-In, you may be enrolled in DEL automatically.</p>
+    </div>
+
+    <details>
+      <summary>How to apply for the home care programs</summary>
+      <div class="detbody">
+        <p><strong>Easiest route:</strong> call the Aging &amp; Disability Resource Center at <a class="tel" href="tel:+18773533771">1-877-353-3771</a> or SeniorsPlus at <a class="tel" href="tel:+12077954010">207-795-4010</a> and say you want a home care assessment. They walk you through it.</p>
+        <p><strong>What happens next:</strong> a nurse or case manager visits and scores how much help you need with daily tasks &mdash; bathing, dressing, eating, moving around. That score decides which program fits.</p>
+        <p><strong>Be honest in the assessment.</strong> People instinctively downplay how much they struggle. Describe your worst days, not your best ones, or you will be scored for less help than you actually need.</p>
+        <p><strong>Bring:</strong> photo ID, Social Security and Medicare cards, proof of income (Social Security award letter, pension statements), recent bank statements, and a list of medications.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ 3. MONEY & MAINECARE ============ -->
+  <section class="card" id="money">
+    <h2><span class="secnum">3</span>Money, MaineCare, and the house</h2>
+
+    <p class="lede">This is the section people find confusing and frightening. Here it is plainly.</p>
+
+    <p>Nursing home care in Maine costs roughly <strong>$11,000 a month</strong>. Almost nobody pays that out of pocket for long. MaineCare (Maine&rsquo;s Medicaid) picks it up &mdash; but only once your countable savings are nearly gone.</p>
+
+    <h3 class="subhead">The 2026 limits</h3>
+
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th>Situation</th><th>Countable assets allowed</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>One person applying, not married</td><td class="money">$10,000</td></tr>
+          <tr><td>Married, <strong>both</strong> applying, sharing a room</td><td class="money">$15,000 total</td></tr>
+          <tr><td>Married, <strong>one</strong> applying &mdash; the healthy spouse at home may keep</td><td class="money">up to $162,660</td></tr>
+          <tr><td>Monthly income the healthy spouse at home may keep</td><td class="money">$2,643.75<br><span class="quiet">rising to $2,705 on July 1, 2026</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="box key">
+      <span class="boxtitle">If only one spouse needs care, the other is protected</span>
+      <p>This is the single most reassuring rule in the system. The healthy spouse staying at home <strong>keeps the house, keeps a car, keeps up to $162,660 in savings, and keeps a monthly income floor</strong>. Nobody is turned out of their home so the other can get care. Money moved between spouses is never penalized.</p>
+    </div>
+
+    <h3 class="subhead">Two rules that surprise families</h3>
+
+    <div class="box stop">
+      <span class="boxtitle">1. The 5-year look-back</span>
+      <p>When you apply, MaineCare examines <strong>the last 60 months</strong> of your finances. Any money or property you gave away for less than it was worth creates a <strong>penalty period</strong> &mdash; months when MaineCare will not pay, even though your money is already gone.</p>
+      <p>The math: amount given away &divide; about $11,000. <strong>Give away $110,000 and you get roughly 10 months with no coverage and no money.</strong></p>
+      <p><strong>So: do not give away money or sign the house over to the kids before talking to an elder law attorney.</strong> Good intentions here cause real harm. Timing is everything.</p>
+    </div>
+
+    <div class="box stop">
+      <span class="boxtitle">2. Estate recovery &mdash; what really happens to the house</span>
+      <p>While you are alive and living in it, your home does <strong>not</strong> count against the $10,000 limit. You will not be forced to sell it. That part is true and people are right to be relieved.</p>
+      <p>But: if you were <strong>55 or older</strong> when MaineCare paid for your care, the State can file a claim against your <strong>estate after you die</strong>, to get back what it spent. In practice that often means the house is sold and the proceeds go to the State instead of to your children.</p>
+      <p>This is the fact families learn too late. It is not a reason to panic &mdash; it is the reason to plan early, while you still have options.</p>
+    </div>
+
+    <h3 class="subhead">Legitimate ways to reduce countable assets</h3>
+
+    <p>These are lawful and normal. They work because you are <em>spending your own money on yourself</em>, not giving it away &mdash; so no penalty applies.</p>
+
+    <ul>
+      <li><strong>Fix up the house.</strong> New roof, furnace, wiring, well pump. Also ramps, walk-in shower, grab bars, stair lift &mdash; which help you stay home longer anyway. The house is exempt, so money spent on it stops being countable.</li>
+      <li><strong>Prepay the funeral and burial</strong> through an irrevocable arrangement with a funeral home. A real expense your family would otherwise face.</li>
+      <li><strong>Pay off debts</strong> &mdash; mortgage, credit cards, the car loan.</li>
+      <li><strong>Buy a reliable vehicle.</strong> One car is exempt.</li>
+      <li><strong>Buy things you actually need</strong> &mdash; hearing aids, dental work, glasses, a good bed, a newer appliance.</li>
+    </ul>
+
+    <div class="box warn">
+      <span class="boxtitle">Two exceptions worth asking a lawyer about by name</span>
+      <p><strong>The caregiver child exception.</strong> If an adult child lived in the home for <strong>at least 2 years</strong> providing care that kept the parent out of a nursing home, the home may be transferred to that child <strong>with no penalty</strong>. This is a real and powerful rule. It requires documentation &mdash; so if a child is doing this now, start writing it down today: dates, tasks, and a letter from the doctor.</p>
+      <p><strong>The sibling exception.</strong> A sibling with an equity interest who lived in the home for at least a year may also qualify.</p>
+      <p>There is also a <strong>5-year irrevocable trust</strong>, which can protect the house &mdash; but only if it is set up and funded <em>more than five years before</em> you need care. It is not a do-it-yourself project. It needs an attorney and it needs time you may not have later. That is the argument for calling now rather than at the hospital.</p>
+    </div>
+
+    <h3 class="subhead">Maine taxes on retirement income</h3>
+    <ul>
+      <li><strong>Maine does not tax Social Security.</strong></li>
+      <li>Maine allows a pension deduction of up to <strong>$49,824 per person</strong> &mdash; <strong>but it is reduced dollar-for-dollar by the Social Security you receive.</strong> Most retirees with a decent Social Security check get little or none of this deduction. This is the detail people get wrong when they estimate their tax bill.</li>
+      <li>Withdrawals from an IRA or 401(k) are taxable in Maine, at rates up to 7.15%.</li>
+    </ul>
+  </section>
+
+  <!-- ============ 4. HOUSING ============ -->
+  <section class="card" id="housing">
+    <h2><span class="secnum">4</span>Where to live, from cheapest to most care</h2>
+
+    <p class="lede">Nobody moves straight from home to a nursing home. There are rungs in between, and most families skip them without realizing.</p>
+
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th>Option</th><th>Roughly what it costs</th><th>When it fits</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>1. Stay home as you are</strong></td>
+            <td>Taxes, heat, upkeep</td>
+            <td>Now. Spend money on grab bars, better lighting, and a stair rail before you need them.</td>
+          </tr>
+          <tr>
+            <td><strong>2. Stay home with paid help</strong></td>
+            <td>$0&ndash;$35/hour; often <strong>free</strong> through MaineCare Section 19 or 63</td>
+            <td>You need help bathing, dressing, cooking, or with medications. <strong>Almost always the right next step.</strong></td>
+          </tr>
+          <tr>
+            <td><strong>3. Residential care / assisted living</strong></td>
+            <td>$4,000&ndash;$8,000/month; some beds take MaineCare</td>
+            <td>Home is no longer safe or manageable, but you do not need skilled nursing.</td>
+          </tr>
+          <tr>
+            <td><strong>4. Nursing facility</strong></td>
+            <td>About <strong>$11,000/month</strong>; MaineCare pays once you qualify</td>
+            <td>You need round-the-clock skilled care.</td>
+          </tr>
+          <tr>
+            <td><strong>5. Maine Veterans&rsquo; Home, South Paris</strong></td>
+            <td>VA support plus MaineCare; often the best value for a veteran</td>
+            <td>See <a href="#veteran">Section 5</a>. <strong>It is in your own town.</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="box key">
+      <span class="boxtitle">There is a veterans&rsquo; nursing home right here in South Paris</span>
+      <p><strong>Maine Veterans&rsquo; Home &mdash; South Paris, 477 High Street.</strong> To get in you need only <strong>one or more days of active duty</strong>, an honorable discharge, and Maine residency. <strong>No combat required. No wartime service required.</strong> A spouse is eligible too, and may be admitted if she needs nursing or assisted-living level care.</p>
+      <a class="telblock" href="tel:+12077436300" style="margin-bottom:0">
+        <span class="who">Maine Veterans&rsquo; Home &mdash; South Paris</span>
+        <span class="num">207-743-6300</span>
+        <span class="what">477 High St, South Paris. Ask for the admissions coordinator. Ask to be put on the waiting list <em>before</em> you need a bed.</span>
+      </a>
+    </div>
+
+    <h3 class="subhead">Nearby residential care and assisted living</h3>
+    <p>These are the licensed options closest to home, so family can visit easily.</p>
+    <ul>
+      <li><strong>South Paris:</strong> Market Square Health Care Center &middot; Paris Home &middot; Elm Hill (69 Elm Hill Rd)</li>
+      <li><strong>Norway:</strong> Norway Center &middot; Spring Street Home (9 Spring St) &middot; Beal Street (7 Beal St)</li>
+    </ul>
+
+    <div class="box warn">
+      <span class="boxtitle">Call each one and ask these three questions</span>
+      <ol>
+        <li><strong>&ldquo;Do you accept MaineCare?&rdquo;</strong> This varies by facility and changes over time. It is the question that decides everything, and no website is reliable on it.</li>
+        <li><strong>&ldquo;If we pay privately first, do we have to leave when the money runs out?&rdquo;</strong> Some places keep you and switch you to MaineCare. Some do not. Get the answer before you move in.</li>
+        <li><strong>&ldquo;How long is the wait?&rdquo;</strong> Then get on the list early. A waiting list costs nothing and you can always say no.</li>
+      </ol>
+      <p>Before signing anything, call the <strong>Long-Term Care Ombudsman</strong> at <a class="tel" href="tel:+18004990229">1-800-499-0229</a>. They are free, independent, and will tell you a facility&rsquo;s complaint history.</p>
+    </div>
+  </section>
+
+  <!-- ============ 5. VETERAN ============ -->
+  <section class="card" id="veteran">
+    <h2><span class="secnum">5</span>Veteran benefits</h2>
+
+    <p class="lede">Three years of active duty with no combat still qualifies for real benefits. Combat is not a requirement for any of the programs below.</p>
+
+    <div class="box stop">
+      <span class="boxtitle">First: find the DD-214</span>
+      <p>The discharge paper is called a <strong>DD-214</strong>. Every benefit on this page depends on it, and the <strong>exact service dates printed on it</strong> decide two of them. Find it and make three copies.</p>
+      <p>Lost it? Request a free replacement from the National Archives at <strong>archives.gov/veterans</strong>, or ask the Maine Bureau of Veterans&rsquo; Services to pull it for you &mdash; they do this routinely and it is free.</p>
+    </div>
+
+    <h3 class="subhead">What is available, and what each one requires</h3>
+
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th>Benefit</th><th>Worth</th><th>What it requires</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Maine Veterans&rsquo; Home</strong><br>South Paris</td>
+            <td>Nursing and assisted living care in your own town</td>
+            <td><strong>1+ day of active duty</strong>, honorable discharge, Maine residency. <strong>No wartime. No combat.</strong> Spouse also eligible. <span class="nowrap">&#10004; He qualifies.</span></td>
+          </tr>
+          <tr>
+            <td><strong>VA health care</strong><br>Togus, Augusta</td>
+            <td>Primary care, specialists, prescriptions, hearing aids</td>
+            <td>Generally 24 months of active duty or the full period called. Income-based enrollment groups. Worth applying.</td>
+          </tr>
+          <tr>
+            <td><strong>VA Pension with Aid &amp; Attendance</strong></td>
+            <td><strong>Often $1,500&ndash;$2,800 a month</strong> toward care costs</td>
+            <td>90+ days active duty with <strong>at least one day during a wartime period</strong>, plus a care need and financial limits. <strong>Check the dates below.</strong></td>
+          </tr>
+          <tr>
+            <td><strong>Maine veteran property tax exemption</strong></td>
+            <td>$6,000 off the home&rsquo;s assessed value</td>
+            <td>Age 62+ <strong>and</strong> wartime service. Same date test. Apply at the Paris town office.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="box key">
+      <span class="boxtitle">&ldquo;He never saw combat&rdquo; does not disqualify him</span>
+      <p>This is the most common misunderstanding about veteran benefits. The VA does <strong>not</strong> ask whether you were in combat. For VA Pension it asks only whether <strong>one single day</strong> of your service fell inside an official wartime window &mdash; anywhere in the world, in any job, including stateside desk duty.</p>
+      <p>Use the checker in <a href="#numbers">Section 7</a> with the dates from the DD-214 to see whether his service falls inside one.</p>
+    </div>
+
+    <h3 class="subhead">Money facts for VA Pension (2026)</h3>
+    <ul>
+      <li><strong>Net worth limit: $163,699.</strong> Notably, the <strong>house you live in and up to 2 acres do not count</strong>, and neither does one vehicle or your household goods. This limit is far more generous than MaineCare&rsquo;s $10,000.</li>
+      <li><strong>Medical expenses reduce your countable income.</strong> Unreimbursed costs &mdash; insurance premiums, prescriptions, in-home aides, facility fees &mdash; come off your income. This is how most people actually qualify, even with a decent pension and Social Security.</li>
+      <li><strong>The VA look-back is 36 months</strong>, not MaineCare&rsquo;s 60. The two programs have different rules, and a move that helps with one can hurt the other. Another reason to get advice before shifting any money.</li>
+    </ul>
+
+    <a class="telblock" href="tel:+12077436300">
+      <span class="who">Maine Veterans&rsquo; Home &mdash; South Paris</span>
+      <span class="num">207-743-6300</span>
+      <span class="what">477 High St. Ask about the waiting list now, even if care is years away.</span>
+    </a>
+
+    <a class="telblock" href="tel:+18772228387">
+      <span class="who">VA Health Benefits &amp; enrollment</span>
+      <span class="num">1-877-222-8387</span>
+      <span class="what">VA health care enrollment line. Togus VA Medical Center is in Augusta; the nearest outpatient clinic is in Rumford.</span>
+    </a>
+
+    <div class="box warn">
+      <span class="boxtitle">Use a free accredited representative, never a paid &ldquo;benefits consultant&rdquo;</span>
+      <p>Maine Bureau of Veterans&rsquo; Services and veterans&rsquo; organizations (VFW, American Legion, DAV) file VA claims for free and are accredited to do it. It is illegal to charge a fee for preparing an initial VA claim. If someone asks for a percentage of the benefit, walk away.</p>
+    </div>
+  </section>
+
+  <!-- ============ 6. PROPERTY TAX ============ -->
+  <section class="card" id="tax">
+    <h2><span class="secnum">6</span>Lower the property tax and household bills</h2>
+
+    <p class="lede">These are small, certain, and quick. No lawyer needed. Several are simply forms nobody told you about.</p>
+
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th>Program</th><th>Worth</th><th>How to get it</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Homestead exemption</strong></td>
+            <td>$25,000 off assessed value</td>
+            <td>One-time form at the Paris town office. From April 1, 2026 the full $25,000 applies to homeowners 65+ regardless of the town&rsquo;s assessment ratio. <strong>Check you already have this &mdash; many people do not.</strong></td>
+          </tr>
+          <tr>
+            <td><strong>Property Tax Fairness Credit</strong></td>
+            <td><strong>Up to $2,000, paid to you</strong></td>
+            <td>Claimed on the Maine income tax return. It is <strong>refundable</strong>, so you get a check <em>even if you owe no tax and would not otherwise file</em>. File a return anyway to claim it.</td>
+          </tr>
+          <tr>
+            <td><strong>Veteran exemption</strong></td>
+            <td>$6,000 off assessed value</td>
+            <td>Age 62+ with wartime service. One-time application with a copy of the DD-214.</td>
+          </tr>
+          <tr>
+            <td><strong>State Property Tax Deferral</strong></td>
+            <td>The State pays your tax bill now</td>
+            <td>For income-eligible owners 65+. <strong>Read the caution below.</strong> Filing deadline is April 1.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="box warn">
+      <span class="boxtitle">About the deferral program</span>
+      <p>It is a loan, not a gift. The State pays your property taxes and is <strong>repaid from your estate</strong> after you die, with interest. That is genuinely useful if cash is tight month to month. But it reduces what your children inherit, and it stacks with MaineCare estate recovery from <a href="#money">Section 3</a>. Decide it as part of the whole picture, not on its own.</p>
+    </div>
+
+    <a class="telblock" href="tel:+12077432501">
+      <span class="who">Town of Paris &mdash; Assessor</span>
+      <span class="num">207-743-2501 <span style="font-size:.8em">ext. 4</span></span>
+      <span class="what">33 Market Square, Paris. assessor@parismaine.org &mdash; Ask: &ldquo;What exemptions are currently on my property, and what am I missing?&rdquo; Also ask for the current assessed value of your property.</span>
+    </a>
+
+    <details>
+      <summary>Other bills worth attacking</summary>
+      <div class="detbody">
+        <ul>
+          <li><strong>Heating:</strong> HEAP through Community Concepts, <a class="tel" href="tel:+12077437716">207-743-7716</a>. Applying also screens you for free weatherization &mdash; insulation and air sealing that permanently cut the oil bill.</li>
+          <li><strong>Prescriptions:</strong> Low Cost Drugs for the Elderly, and a free Part D plan review from SeniorsPlus every fall. Plans change yearly; the same drug can cost wildly different amounts. This review routinely saves people hundreds.</li>
+          <li><strong>Medicare premiums and copays:</strong> the Medicare Savings Program, with <strong>no asset test</strong>. See <a href="#home">Section 2</a>.</li>
+          <li><strong>Food:</strong> SNAP has a simplified application for seniors. Many older people assume they earn too much and never apply. Ask SeniorsPlus to screen you.</li>
+          <li><strong>Phone/internet:</strong> ask your provider about low-income senior rates.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ 7. CALCULATORS ============ -->
+  <section class="card" id="numbers">
+    <h2><span class="secnum">7</span>Your numbers</h2>
+
+    <p class="lede">Fill in whatever you know. Blanks are fine. Nothing is sent anywhere &mdash; these numbers stay in this browser on this computer, and the button at the bottom erases them.</p>
+
+    <!-- CALC 1 -->
+    <div class="calc">
+      <h3>Are you over the MaineCare limit?</h3>
+      <p class="hint">Count savings and investments. Do <strong>not</strong> count your house, one car, or your household belongings.</p>
+
+      <div class="field">
+        <label for="c1status">Who would be applying for care?</label>
+        <select id="c1status">
+          <option value="single">One person, not married</option>
+          <option value="one">Married &mdash; only one of us needs care</option>
+          <option value="both">Married &mdash; both of us need care</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="c1bank">Money in the bank</label>
+        <span class="sublabel">Checking, savings, CDs, cash</span>
+        <input type="number" id="c1bank" inputmode="numeric" min="0" step="1000" placeholder="0">
+      </div>
+
+      <div class="field">
+        <label for="c1invest">Investments and retirement accounts</label>
+        <span class="sublabel">IRA, 401(k), stocks, bonds, annuities</span>
+        <input type="number" id="c1invest" inputmode="numeric" min="0" step="1000" placeholder="0">
+      </div>
+
+      <div class="field">
+        <label for="c1other">Other countable property</label>
+        <span class="sublabel">A second vehicle, land you do not live on, a camp, a boat</span>
+        <input type="number" id="c1other" inputmode="numeric" min="0" step="1000" placeholder="0">
+      </div>
+
+      <div class="result" id="r1" role="status" aria-live="polite"></div>
+    </div>
+
+    <!-- CALC 2 -->
+    <div class="calc">
+      <h3>How long would savings last if care were needed?</h3>
+      <p class="hint">A nursing home in Maine runs about $11,000 a month. Assisted living is roughly $4,000&ndash;$8,000. In-home help is far less.</p>
+
+      <div class="field">
+        <label for="c2income">Total monthly income</label>
+        <span class="sublabel">Social Security plus pensions, for the person needing care</span>
+        <input type="number" id="c2income" inputmode="numeric" min="0" step="100" placeholder="0">
+      </div>
+
+      <div class="field">
+        <label for="c2cost">Monthly cost of the care</label>
+        <span class="sublabel">Try 11000 for a nursing home, or 6000 for assisted living</span>
+        <input type="number" id="c2cost" inputmode="numeric" min="0" step="100" placeholder="11000">
+      </div>
+
+      <div class="field">
+        <label for="c2savings">Savings available to pay for it</label>
+        <input type="number" id="c2savings" inputmode="numeric" min="0" step="1000" placeholder="0">
+      </div>
+
+      <div class="result" id="r2" role="status" aria-live="polite"></div>
+    </div>
+
+    <!-- CALC 3 -->
+    <div class="calc">
+      <h3>The house</h3>
+      <p class="hint">This starts at <strong>$275,000</strong>, roughly the middle of the local market &mdash; it is only a placeholder. <strong>Replace it with your real number.</strong> The assessor at <a class="tel" href="tel:+12077432501">207-743-2501 ext.&nbsp;4</a> has the assessed value, and any local realtor will give you a market estimate for free.</p>
+
+      <div class="field">
+        <label for="c3value">What the house is worth</label>
+        <input type="number" id="c3value" inputmode="numeric" min="0" step="5000" value="275000">
+      </div>
+
+      <div class="field">
+        <label for="c3mortgage">Mortgage or home equity loan still owed</label>
+        <input type="number" id="c3mortgage" inputmode="numeric" min="0" step="1000" placeholder="0">
+      </div>
+
+      <div class="result" id="r3" role="status" aria-live="polite"></div>
+    </div>
+
+    <!-- CALC 4 -->
+    <div class="calc">
+      <h3>Wartime service check</h3>
+      <p class="hint">Enter the years of active duty from the <strong>DD-214</strong>. This decides eligibility for <strong>VA Pension / Aid &amp; Attendance</strong> and the <strong>$6,000 Maine property tax exemption</strong>. Combat is not part of the test.</p>
+
+      <div class="field">
+        <label for="c4start">Year active duty began</label>
+        <input type="number" id="c4start" inputmode="numeric" min="1930" max="2026" step="1" placeholder="e.g. 1968">
+      </div>
+
+      <div class="field">
+        <label for="c4end">Year active duty ended</label>
+        <input type="number" id="c4end" inputmode="numeric" min="1930" max="2026" step="1" placeholder="e.g. 1971">
+      </div>
+
+      <div class="result" id="r4" role="status" aria-live="polite"></div>
+    </div>
+
+    <div class="btnrow noprint">
+      <button type="button" class="danger" id="btnClear">Erase all my numbers</button>
+    </div>
+    <p class="quiet">These figures are rough guides for conversations with a caseworker or attorney. MaineCare and the VA decide based on documents, not estimates.</p>
+  </section>
+
+  <!-- ============ 8. CONTACTS ============ -->
+  <section class="card" id="contacts">
+    <h2><span class="secnum">8</span>Every phone number, in one place</h2>
+    <p class="lede">Tap any number to call it. Or print this page and keep it by the phone.</p>
+
+    <h3 class="subhead">Start with these</h3>
+    <a class="telblock" href="tel:+18773533771"><span class="who">Aging &amp; Disability Resource Center</span><span class="num">1-877-353-3771</span><span class="what">Statewide front door for all senior services</span></a>
+    <a class="telblock" href="tel:+12077954010"><span class="who">SeniorsPlus (Oxford County)</span><span class="num">207-795-4010</span><span class="what">Meals, care coordination, Medicare help &middot; also 1-800-427-1241</span></a>
+
+    <h3 class="subhead">Legal help, free</h3>
+    <a class="telblock" href="tel:+18007505353"><span class="who">Legal Services for Maine Elders</span><span class="num">1-800-750-5353</span><span class="what">Free attorney, age 60+. Wills, the house, benefit denials</span></a>
+    <a class="telblock" href="tel:+12077748211"><span class="who">Pine Tree Legal Assistance</span><span class="num">207-774-8211</span><span class="what">Free civil legal aid</span></a>
+
+    <h3 class="subhead">Care and housing</h3>
+    <a class="telblock" href="tel:+12077436300"><span class="who">Maine Veterans&rsquo; Home &mdash; South Paris</span><span class="num">207-743-6300</span><span class="what">477 High St, South Paris</span></a>
+    <a class="telblock" href="tel:+18004990229"><span class="who">Long-Term Care Ombudsman</span><span class="num">1-800-499-0229</span><span class="what">Free, independent. Call before signing with any facility</span></a>
+
+    <h3 class="subhead">Money, bills, and benefits</h3>
+    <a class="telblock" href="tel:+12077437716"><span class="who">Community Concepts &mdash; heating help</span><span class="num">207-743-7716</span><span class="what">HEAP and weatherization, South Paris office</span></a>
+    <a class="telblock" href="tel:+18777747772"><span class="who">Medicare Part D Helpline (Maine)</span><span class="num">1-877-774-7772</span><span class="what">Prescription drug plan questions</span></a>
+    <a class="telblock" href="tel:+18006334227"><span class="who">Medicare</span><span class="num">1-800-633-4227</span><span class="what">1-800-MEDICARE</span></a>
+    <a class="telblock" href="tel:+18007721213"><span class="who">Social Security</span><span class="num">1-800-772-1213</span><span class="what">Benefit amounts, award letters, direct deposit</span></a>
+
+    <h3 class="subhead">Town of Paris</h3>
+    <a class="telblock" href="tel:+12077432501"><span class="who">Town Office &amp; Assessor</span><span class="num">207-743-2501</span><span class="what">33 Market Square, Paris. Assessor at ext. 4 &middot; assessor@parismaine.org &middot; Exemptions, assessed value, notary</span></a>
+  </section>
+
+  </main>
+</div>
+
+<footer class="foot">
+  <div class="wrap">
+    <h2>Before you act on anything here</h2>
+    <p>Every dollar figure on this page is a <strong>2026 amount, and nearly all of them change every year</strong>. Treat them as a guide for the conversation, not as the answer.</p>
+    <p><strong>The one thing to be careful about:</strong> do not give away money or property, and do not put the house in a child&rsquo;s name, before talking to a Maine elder law attorney. MaineCare looks back <strong>five years</strong>. A transfer that seems generous today can block coverage later, when the money is already gone and cannot be undone. Free advice is available at <a class="tel" href="tel:+18007505353">1-800-750-5353</a> &mdash; use it <em>before</em> moving anything, not after.</p>
+    <p class="quiet">This is a summary of public information about Maine and federal programs, assembled September 2026. It is not legal, tax, or financial advice. Eligibility is always decided by MaineCare, the VA, and the Town of Paris based on your actual documents. Source links for every figure are in <strong>SOURCES.md</strong>, next to this file.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  var STORE = "sp_retire_v1";
+
+  // Every input we persist and recompute from.
+  var IDS = ["c1status","c1bank","c1invest","c1other",
+             "c2income","c2cost","c2savings",
+             "c3value","c3mortgage",
+             "c4start","c4end"];
+
+  // ---------- 2026 constants (see SOURCES.md) ----------
+  var LIMIT_SINGLE   = 10000;
+  var LIMIT_BOTH     = 15000;
+  var CSRA_MAX       = 162660;
+  var NH_MONTHLY     = 11000;   // Maine average, also the transfer-penalty divisor
+  var VA_NET_WORTH   = 163699;
+
+  var WARTIME = [
+    {name:"World War II",            from:1941, to:1946, edge:[1941,1946]},
+    {name:"the Korean Conflict",     from:1950, to:1955, edge:[1950,1955]},
+    {name:"the Vietnam era",         from:1964, to:1975, edge:[1964,1975]},
+    {name:"the Persian Gulf War",    from:1990, to:2026, edge:[1990]}
+  ];
+
+  function $(id){ return document.getElementById(id); }
+
+  function num(id){
+    var el = $(id);
+    if(!el) return null;
+    var raw = String(el.value).replace(/[^0-9.\-]/g,"");
+    if(raw === "") return null;
+    var n = parseFloat(raw);
+    return isFinite(n) ? n : null;
+  }
+
+  function money(n){
+    return "$" + Math.round(Math.abs(n)).toLocaleString("en-US");
+  }
+
+  function show(id, html, cls){
+    var el = $(id);
+    if(!el) return;
+    el.className = "result" + (cls ? " " + cls : "");
+    el.innerHTML = html;
+  }
+
+  // ---------- 1. countable assets vs the limit ----------
+  function calcAssets(){
+    var status = $("c1status") ? $("c1status").value : "single";
+    var parts  = [num("c1bank"), num("c1invest"), num("c1other")];
+    var any    = parts.some(function(p){ return p !== null; });
+
+    if(!any){ show("r1",""); return; }
+
+    var total = parts.reduce(function(a,b){ return a + (b||0); }, 0);
+    var limit = (status === "both") ? LIMIT_BOTH : LIMIT_SINGLE;
+    var diff  = total - limit;
+    var out   = "";
+
+    out += "<p>Countable assets: <span class='big'>" + money(total) + "</span></p>";
+
+    if(status === "one"){
+      // One spouse applying: applicant limit plus the protected spousal share.
+      out += "<p>Because only one of you needs care, the spouse staying home may keep up to <strong>" +
+             money(CSRA_MAX) + "</strong>, and the person applying may keep <strong>" + money(LIMIT_SINGLE) + "</strong>.</p>";
+      if(total <= CSRA_MAX + LIMIT_SINGLE){
+        out += "<p><strong>Your total is within what the two of you are allowed to keep between you.</strong> " +
+               "The money usually has to be retitled to the at-home spouse, and the exact protected amount is set by the caseworker. " +
+               "Do not move anything before you are told to.</p>";
+      } else {
+        var over = total - (CSRA_MAX + LIMIT_SINGLE);
+        out += "<p>That is roughly <strong>" + money(over) + " more</strong> than the two of you could keep between you. " +
+               "Ask an elder law attorney about the protected share &mdash; it can sometimes be increased.</p>";
+      }
+      out += "<p class='quiet'>Your house and one car are not counted here.</p>";
+      show("r1", out, (total <= CSRA_MAX + LIMIT_SINGLE) ? "isok" : "isbad");
+      return;
+    }
+
+    if(diff > 0){
+      out += "<p>You are <strong>" + money(diff) + " over</strong> the " + money(limit) + " limit" +
+             (status === "both" ? " for a married couple both applying" : "") + ".</p>";
+      out += "<p>Spending that down on yourselves is lawful &mdash; house repairs, a prepaid funeral, paying off debt, a reliable car, dental work. " +
+             "<strong>Giving it away is not.</strong> See Section&nbsp;3 before you move any of it.</p>";
+      show("r1", out, "isbad");
+    } else {
+      out += "<p><strong>You are within the " + money(limit) + " limit</strong>, with " + money(-diff) + " to spare.</p>";
+      out += "<p>Income limits are separate and are checked too. The Resource Center can screen you properly: 1-877-353-3771.</p>";
+      show("r1", out, "isok");
+    }
+    $("r1").innerHTML += "<p class='quiet'>Your house and one car are not counted here.</p>";
+  }
+
+  // ---------- 2. monthly gap and runway ----------
+  function calcRunway(){
+    var income  = num("c2income");
+    var cost    = num("c2cost");
+    var savings = num("c2savings");
+
+    if(income === null && cost === null && savings === null){ show("r2",""); return; }
+
+    var c = (cost === null) ? NH_MONTHLY : cost;
+    var i = income || 0;
+    var gap = c - i;
+    var out = "";
+
+    if(gap <= 0){
+      out += "<p><span class='big'>Income covers the cost.</span>Your monthly income of " + money(i) +
+             " meets the " + money(c) + " monthly cost, with " + money(-gap) + " left over.</p>";
+      show("r2", out, "isok");
+      return;
+    }
+
+    out += "<p>Monthly shortfall: <span class='big'>" + money(gap) + " a month</span></p>";
+    out += "<p>Care costs " + money(c) + " and income covers " + money(i) + ".</p>";
+
+    if(savings !== null && savings > 0){
+      var spendable = Math.max(0, savings - LIMIT_SINGLE);
+      var months = Math.floor(spendable / gap);
+      var years = Math.floor(months / 12);
+      var rem = months % 12;
+      var dur = months < 1 ? "less than a month"
+              : months < 12 ? months + (months === 1 ? " month" : " months")
+              : years + (years === 1 ? " year" : " years") + (rem ? " and " + rem + (rem === 1 ? " month" : " months") : "");
+
+      out += "<p>Savings of " + money(savings) + " would last about <span class='big'>" + dur + "</span>" +
+             " before reaching the " + money(LIMIT_SINGLE) + " MaineCare limit.</p>";
+      out += "<p><strong>Apply for MaineCare well before the money runs out</strong> &mdash; approval takes time, and the application asks for five years of records. " +
+             "Starting when you have a few months of cushion left is far less stressful than starting at zero.</p>";
+      show("r2", out, months < 24 ? "isbad" : "");
+    } else {
+      out += "<p>Enter your savings above to see how long they would last.</p>";
+      show("r2", out, "isbad");
+    }
+  }
+
+  // ---------- 3. the house ----------
+  function calcHouse(){
+    var value = num("c3value");
+    var mort  = num("c3mortgage");
+    if(value === null && mort === null){ show("r3",""); return; }
+
+    var v = value || 0;
+    var m = mort || 0;
+    var equity = v - m;
+    var out = "";
+
+    out += "<p>Equity in the house: <span class='big'>" + money(equity) + "</span></p>";
+
+    if(equity > 0){
+      out += "<p><strong>While you live there, this does not count against the MaineCare asset limit</strong> and you cannot be forced to sell it. " +
+             "If one spouse is at home, that protection is firm.</p>";
+      out += "<p>But if MaineCare pays for care after age 55, the State can claim up to <strong>" + money(equity) +
+             "</strong> from the estate after death &mdash; which usually means this is the amount at risk of going to the State instead of to your children.</p>";
+      out += "<p>That is what the caregiver-child exception and a 5-year trust are for. Both need a lawyer, and the trust needs five years of lead time. See Section&nbsp;3.</p>";
+      if(equity < VA_NET_WORTH){
+        out += "<p class='quiet'>For VA Pension purposes the home you live in and up to 2 acres are excluded entirely, so this equity does not count against the " + money(VA_NET_WORTH) + " VA net worth limit.</p>";
+      }
+    } else {
+      out += "<p>The mortgage is larger than the value, so there is no equity to protect. Paying down that balance is one of the lawful ways to reduce countable savings.</p>";
+    }
+    show("r3", out, "");
+  }
+
+  // ---------- 4. wartime service ----------
+  function calcWartime(){
+    var s = num("c4start");
+    var e = num("c4end");
+    if(s === null && e === null){ show("r4",""); return; }
+    if(s === null || e === null){
+      show("r4", "<p>Enter both the start and end year from the DD-214.</p>", "");
+      return;
+    }
+    if(e < s){
+      show("r4", "<p>The end year is earlier than the start year &mdash; please check the dates.</p>", "isbad");
+      return;
+    }
+
+    var hits = [], edgy = false;
+    WARTIME.forEach(function(w){
+      if(s <= w.to && e >= w.from){
+        hits.push(w.name);
+        w.edge.forEach(function(y){ if(s === y || e === y) edgy = true; });
+      }
+    });
+
+    var out = "";
+    if(hits.length){
+      out += "<p><span class='big'>Yes &mdash; that is wartime service.</span>Service from " + s + " to " + e +
+             " overlaps <strong>" + hits.join(" and ") + "</strong>.</p>";
+      out += "<p>Combat is not required. Serving stateside counts. This means he is likely eligible to be considered for:</p>";
+      out += "<ul><li><strong>VA Pension with Aid &amp; Attendance</strong> &mdash; often $1,500 to $2,800 a month toward care, if there is a care need and net worth is under " + money(VA_NET_WORTH) + " (the house does not count).</li>" +
+             "<li><strong>The $6,000 Maine property tax exemption</strong>, at age 62 or older.</li></ul>";
+      out += "<p>Next step: bring the DD-214 to a free accredited representative &mdash; Maine Bureau of Veterans&rsquo; Services, VFW, American Legion, or DAV. Never pay anyone to file an initial claim.</p>";
+      if(edgy){
+        out += "<p class='quiet'><strong>One caution:</strong> your dates land on the edge of a wartime window, and these windows start and end mid-year (the Vietnam era runs Aug&nbsp;5,&nbsp;1964 to May&nbsp;7,&nbsp;1975; Korea, June&nbsp;27,&nbsp;1950 to Jan&nbsp;31,&nbsp;1955). Have someone check the exact month and day on the DD-214.</p>";
+      }
+      show("r4", out, "isok");
+    } else {
+      out += "<p><span class='big'>Those years fall outside the wartime windows.</span>Service from " + s + " to " + e +
+             " does not appear to overlap an official wartime period, so <strong>VA Pension and the $6,000 state exemption likely do not apply</strong>.</p>";
+      out += "<p><strong>This changes nothing about the two biggest benefits, which he still qualifies for:</strong></p>";
+      out += "<ul><li><strong>Maine Veterans&rsquo; Home in South Paris</strong> &mdash; needs only one day of active duty, no wartime, no combat. 207-743-6300.</li>" +
+             "<li><strong>VA health care at Togus</strong> &mdash; no wartime requirement.</li></ul>";
+      out += "<p>The wartime windows are: WWII Dec&nbsp;1941&ndash;Dec&nbsp;1946 &middot; Korea Jun&nbsp;1950&ndash;Jan&nbsp;1955 &middot; Vietnam era Aug&nbsp;1964&ndash;May&nbsp;1975 &middot; Persian Gulf Aug&nbsp;1990 onward. If the DD-214 shows dates near an edge, have it checked.</p>";
+      show("r4", out, "");
+    }
+  }
+
+  function computeAll(){
+    calcAssets();
+    calcRunway();
+    calcHouse();
+    calcWartime();
+  }
+
+  // ---------- persistence (best effort; private windows may block it) ----------
+  function save(){
+    try{
+      var data = {};
+      IDS.forEach(function(id){ var el = $(id); if(el) data[id] = el.value; });
+      window.localStorage.setItem(STORE, JSON.stringify(data));
+    }catch(err){ /* storage unavailable - the page still works */ }
+  }
+
+  function load(){
+    try{
+      var raw = window.localStorage.getItem(STORE);
+      if(!raw) return;
+      var data = JSON.parse(raw);
+      IDS.forEach(function(id){
+        var el = $(id);
+        if(el && Object.prototype.hasOwnProperty.call(data, id) && data[id] !== null){
+          el.value = data[id];
+        }
+      });
+    }catch(err){ /* ignore corrupt or blocked storage */ }
+  }
+
+  function clearAll(){
+    try{ window.localStorage.removeItem(STORE); }catch(err){}
+    IDS.forEach(function(id){
+      var el = $(id);
+      if(!el) return;
+      if(el.tagName === "SELECT"){ el.selectedIndex = 0; }
+      else if(id === "c3value"){ el.value = "275000"; }
+      else { el.value = ""; }
+    });
+    computeAll();
+    var btn = $("btnClear");
+    if(btn){
+      var was = btn.textContent;
+      btn.textContent = "Erased.";
+      window.setTimeout(function(){ btn.textContent = was; }, 1800);
+    }
+  }
+
+  // ---------- wiring ----------
+  IDS.forEach(function(id){
+    var el = $(id);
+    if(!el) return;
+    var evt = (el.tagName === "SELECT") ? "change" : "input";
+    el.addEventListener(evt, function(){ computeAll(); save(); });
+  });
+
+  var bClear = $("btnClear");
+  if(bClear) bClear.addEventListener("click", clearAll);
+
+  var bPrint = $("btnPrint");
+  if(bPrint) bPrint.addEventListener("click", function(){ window.print(); });
+
+  var bOpen = $("btnOpenAll");
+  if(bOpen) bOpen.addEventListener("click", function(){
+    var all = document.querySelectorAll("details:not(.tocbox)");
+    var anyClosed = Array.prototype.some.call(all, function(d){ return !d.open; });
+    Array.prototype.forEach.call(all, function(d){ d.open = anyClosed; });
+    bOpen.textContent = anyClosed ? "Close all sections" : "Open all sections";
+  });
+
+  // Expand everything for printing so nothing is silently omitted on paper.
+  window.addEventListener("beforeprint", function(){
+    Array.prototype.forEach.call(document.querySelectorAll("details:not(.tocbox)"), function(d){
+      if(!d.open){ d.open = true; d.setAttribute("data-autoopened","1"); }
+    });
+  });
+  window.addEventListener("afterprint", function(){
+    Array.prototype.forEach.call(document.querySelectorAll("details[data-autoopened]"), function(d){
+      d.open = false;
+      d.removeAttribute("data-autoopened");
+    });
+  });
+
+  // ---------- table of contents ----------
+  var DESKTOP = "(min-width:1100px)";
+  var tocBox  = $("tocbox");
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll(".toclist a"));
+
+  var targets = tocLinks.map(function(a){
+    var href = a.getAttribute("href") || "";
+    return href.charAt(0) === "#" ? document.getElementById(href.slice(1)) : null;
+  });
+
+  // Highlight the section whose top has most recently passed the reading line.
+  var ticking = false;
+  function setActive(){
+    ticking = false;
+    if(!targets.length) return;
+
+    var line = 140;            // a little below the viewport top
+    var activeIdx = 0;
+    for(var i = 0; i < targets.length; i++){
+      var t = targets[i];
+      if(t && t.getBoundingClientRect().top <= line) activeIdx = i;
+    }
+
+    // At the very bottom of the page, the last section is what you are reading,
+    // even if its top never crossed the line.
+    var doc = document.documentElement;
+    if(window.innerHeight + (window.pageYOffset || doc.scrollTop) >= doc.scrollHeight - 4){
+      activeIdx = targets.length - 1;
+    }
+
+    for(var j = 0; j < tocLinks.length; j++){
+      var on = (j === activeIdx);
+      if(on){
+        tocLinks[j].className = "active";
+        tocLinks[j].setAttribute("aria-current", "true");
+      } else {
+        tocLinks[j].className = "";
+        tocLinks[j].removeAttribute("aria-current");
+      }
+    }
+  }
+
+  function onScroll(){
+    if(ticking) return;
+    ticking = true;
+    if(window.requestAnimationFrame) window.requestAnimationFrame(setActive);
+    else window.setTimeout(setActive, 100);
+  }
+
+  if(tocLinks.length){
+    window.addEventListener("scroll", onScroll, {passive:true});
+    window.addEventListener("resize", onScroll);
+    window.addEventListener("hashchange", onScroll);
+    setActive();
+  }
+
+  // The sidebar is always open on a wide screen; on a narrow one it collapses
+  // to a single tappable bar so it does not push the content down.
+  if(tocBox && window.matchMedia){
+    var mq = window.matchMedia(DESKTOP);
+    var syncToc = function(){ tocBox.open = mq.matches; };
+    syncToc();
+    if(mq.addEventListener) mq.addEventListener("change", syncToc);
+    else if(mq.addListener) mq.addListener(syncToc);
+
+    // On a phone, picking a section should get out of the way.
+    tocLinks.forEach(function(a){
+      a.addEventListener("click", function(){
+        if(!mq.matches) tocBox.open = false;
+      });
+    });
+  }
+
+  load();
+  computeAll();
+})();
+</script>
+</body>
+</html>
