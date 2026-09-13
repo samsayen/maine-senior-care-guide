@@ -3,7 +3,7 @@
 A single-page, plain-language reference for older adults in **Oxford County, Maine**
 (South Paris / Norway area) and the families helping them.
 
-**Live page:** https://samsayen.github.io/maine-senior-care-guide/
+**Live page:** https://sayen.io/maine-senior-care-guide/
 
 It pulls together the things that are otherwise scattered across a dozen state and federal
 websites — and written in type large enough to actually read.
